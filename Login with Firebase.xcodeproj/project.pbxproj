@@ -12,11 +12,8 @@
 		714B035129EB1F8C003892B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714B035029EB1F8C003892B6 /* Assets.xcassets */; };
 		714B035429EB1F8C003892B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714B035229EB1F8C003892B6 /* LaunchScreen.storyboard */; };
 		71B694F629EB2EF00032E2C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B694F429EB2EF00032E2C8 /* LoginViewController.swift */; };
-		71B694F729EB2EF00032E2C8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B694F529EB2EF00032E2C8 /* LoginViewController.xib */; };
 		71B694FA29EB2F160032E2C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B694F829EB2F160032E2C8 /* HomeViewController.swift */; };
-		71B694FB29EB2F160032E2C8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B694F929EB2F160032E2C8 /* HomeViewController.xib */; };
 		71B694FE29EB2F2E0032E2C8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B694FC29EB2F2E0032E2C8 /* RegisterViewController.swift */; };
-		71B694FF29EB2F2E0032E2C8 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B694FD29EB2F2E0032E2C8 /* RegisterViewController.xib */; };
 		71B6950329EB30E70032E2C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71B6950229EB30E70032E2C8 /* GoogleService-Info.plist */; };
 		71B6950629EB31C30032E2C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 71B6950529EB31C30032E2C8 /* FirebaseAnalytics */; };
 		71B6950829EB31C30032E2C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 71B6950729EB31C30032E2C8 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -45,6 +42,9 @@
 		71B6953629EB31C30032E2C8 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71B6953529EB31C30032E2C8 /* FirebaseRemoteConfigSwift */; };
 		71B6953829EB31C30032E2C8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 71B6953729EB31C30032E2C8 /* FirebaseStorage */; };
 		71B6953A29EB31C30032E2C8 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 71B6953929EB31C30032E2C8 /* FirebaseStorageCombine-Community */; };
+		71B6954A29EB49C60032E2C8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B6954929EB49C60032E2C8 /* LoginViewController.xib */; };
+		71B6954C29EB4A0C0032E2C8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B6954B29EB4A0C0032E2C8 /* HomeViewController.xib */; };
+		71B6954D29EB4B690032E2C8 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B6954729EB48C70032E2C8 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,12 +55,12 @@
 		714B035329EB1F8C003892B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		714B035529EB1F8C003892B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71B694F429EB2EF00032E2C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		71B694F529EB2EF00032E2C8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		71B694F829EB2F160032E2C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		71B694F929EB2F160032E2C8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		71B694FC29EB2F2E0032E2C8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		71B694FD29EB2F2E0032E2C8 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		71B6950229EB30E70032E2C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71B6954729EB48C70032E2C8 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		71B6954929EB49C60032E2C8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		71B6954B29EB4A0C0032E2C8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +143,9 @@
 		71B694F229EB2ECE0032E2C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				71B694F529EB2EF00032E2C8 /* LoginViewController.xib */,
-				71B694F929EB2F160032E2C8 /* HomeViewController.xib */,
-				71B694FD29EB2F2E0032E2C8 /* RegisterViewController.xib */,
+				71B6954729EB48C70032E2C8 /* RegisterViewController.xib */,
+				71B6954929EB49C60032E2C8 /* LoginViewController.xib */,
+				71B6954B29EB4A0C0032E2C8 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,11 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				714B035429EB1F8C003892B6 /* LaunchScreen.storyboard in Resources */,
-				71B694FF29EB2F2E0032E2C8 /* RegisterViewController.xib in Resources */,
+				71B6954A29EB49C60032E2C8 /* LoginViewController.xib in Resources */,
 				714B035129EB1F8C003892B6 /* Assets.xcassets in Resources */,
-				71B694F729EB2EF00032E2C8 /* LoginViewController.xib in Resources */,
-				71B694FB29EB2F160032E2C8 /* HomeViewController.xib in Resources */,
 				71B6950329EB30E70032E2C8 /* GoogleService-Info.plist in Resources */,
+				71B6954C29EB4A0C0032E2C8 /* HomeViewController.xib in Resources */,
+				71B6954D29EB4B690032E2C8 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -70,8 +70,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didTapRegister(_ sender: Any) {
-        let registerViewController =
-           navigationController?.pushViewController(RegisterViewController, animated: true)
+        let registerViewController = RegisterViewController()
+           navigationController?.pushViewController(registerViewController, animated: true)
         
     }
 }

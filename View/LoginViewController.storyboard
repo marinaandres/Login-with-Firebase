@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Login_with_Firebase" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="LogIn" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextfield" destination="QcF-OL-wAz" id="vpe-5e-qaV"/>
                 <outlet property="forgottenLabel" destination="r6n-xE-BSE" id="wi0-Iq-3Pm"/>
@@ -156,9 +156,6 @@
                                 </backgroundConfiguration>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
-                            <connections>
-                                <action selector="didTapRegister:" destination="-1" eventType="touchUpInside" id="mA8-FR-49k"/>
-                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -194,3 +191,4 @@
         </systemColor>
     </resources>
 </document>
+
