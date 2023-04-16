@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 
+
+
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var stackView: UIStackView!
