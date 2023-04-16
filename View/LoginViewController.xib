@@ -10,8 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Login_with_Firebase" customModuleProvider="target">
             <connections>
+                <outlet property="appleButton" destination="9Aj-Ld-PhB" id="kAh-My-CMI"/>
                 <outlet property="emailTextfield" destination="QcF-OL-wAz" id="vpe-5e-qaV"/>
+                <outlet property="facebookButton" destination="K9n-Wt-pur" id="5uQ-gE-KOl"/>
                 <outlet property="forgottenLabel" destination="r6n-xE-BSE" id="wi0-Iq-3Pm"/>
+                <outlet property="googleButton" destination="itl-Rh-oN7" id="5ye-aV-CJR"/>
                 <outlet property="loginButton" destination="Oaf-4S-Aui" id="qvr-8n-Q6D"/>
                 <outlet property="passwordTextfield" destination="iLY-Lj-ywr" id="9No-7K-2Jt"/>
                 <outlet property="stackView" destination="fm2-Ui-oGk" id="DAv-Qb-kpH"/>
@@ -120,6 +123,9 @@
                                 </backgroundConfiguration>
                                 <color key="baseForegroundColor" systemColor="labelColor"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="didTapLoginFacebook:" destination="-1" eventType="touchUpInside" id="IvC-eG-Ebj"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Aj-Ld-PhB">
                             <rect key="frame" x="0.0" y="311.66666666666663" width="250" height="34.333333333333314"/>
