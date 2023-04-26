@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Login_with_Firebase" customModuleProvider="target">
             <connections>
-                <outlet property="appleButton" destination="9Aj-Ld-PhB" id="kAh-My-CMI"/>
                 <outlet property="emailTextfield" destination="QcF-OL-wAz" id="vpe-5e-qaV"/>
                 <outlet property="facebookButton" destination="K9n-Wt-pur" id="5uQ-gE-KOl"/>
                 <outlet property="forgottenLabel" destination="r6n-xE-BSE" id="wi0-Iq-3Pm"/>
@@ -27,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fm2-Ui-oGk">
-                    <rect key="frame" x="71.666666666666686" y="253" width="250" height="346"/>
+                    <rect key="frame" x="71.666666666666686" y="277" width="250" height="298"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="X2e-zi-y0w">
                             <rect key="frame" x="0.0" y="0.0" width="250" height="54.333333333333336"/>
@@ -113,29 +112,23 @@
                                 </backgroundConfiguration>
                                 <color key="baseForegroundColor" systemColor="labelColor"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="didTaploginGoogle:" destination="-1" eventType="touchUpInside" id="kF3-i3-BXS"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9n-Wt-pur">
-                            <rect key="frame" x="0.0" y="265.33333333333337" width="250" height="34.333333333333314"/>
+                            <rect key="frame" x="0.0" y="265.33333333333337" width="250" height="32.666666666666686"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Continuar con Facebook" cornerStyle="large">
                                 <backgroundConfiguration key="background">
-                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 </backgroundConfiguration>
-                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
                             <connections>
                                 <action selector="didTapLoginFacebook:" destination="-1" eventType="touchUpInside" id="IvC-eG-Ebj"/>
                             </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Aj-Ld-PhB">
-                            <rect key="frame" x="0.0" y="311.66666666666663" width="250" height="34.333333333333314"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Continua con Apple" cornerStyle="large">
-                                <backgroundConfiguration key="background">
-                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                </backgroundConfiguration>
-                                <color key="baseForegroundColor" systemColor="labelColor"/>
-                            </buttonConfiguration>
                         </button>
                     </subviews>
                     <constraints>
@@ -191,6 +184,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
