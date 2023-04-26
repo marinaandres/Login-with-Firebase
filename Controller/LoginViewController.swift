@@ -1,14 +1,14 @@
 
 
 import UIKit
-import FirebaseAuth 
+import FirebaseAuth
 import FacebookLogin
+import GoogleSignIn
+import GoogleSignInSwift
+import FirebaseCore
 
 
 class LoginViewController: UIViewController {
-    
-    @IBOutlet weak var appleButton: UIButton!
-    
     
     @IBOutlet var facebookButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
@@ -16,8 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
+    
     
     private var isEmailEmpty: Bool = true {
         didSet {
@@ -38,6 +38,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if let token = AccessToken.current,
            !token.isExpired {
             // User is logged in, do work such as go to next view controller.
@@ -47,7 +49,9 @@ class LoginViewController: UIViewController {
         
         emailTextfield.addTarget(self, action: #selector(didChangeTextfield), for: .editingChanged)
         passwordTextfield.addTarget(self, action: #selector(didChangeTextfield), for: .editingChanged)
+        
     }
+     
     
     @objc func didChangeTextfield( sender:UITextField){
         if sender == emailTextfield {
@@ -57,6 +61,45 @@ class LoginViewController: UIViewController {
         if sender == passwordTextfield {
             isPasswordEmpty = sender.text?.isEmpty ?? true
         }
+        
+    }
+    
+        
+    @IBAction func didTaploginGoogle(_ sender: Any) {
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
+        // Start the sign in flow!
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { result, error in
+            guard error == nil else {
+                print("Error al iniciar sesión con Google: \(error!.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                print("Error al obtener el IDToken del usuario de Google")
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential) { (authResult, error) in
+                if let error = error {
+                    print("Error al iniciar sesión con Firebase: \(error.localizedDescription)")
+                    return
+                }
+                
+                print("Inicio de sesión exitoso")
+            }
+        }
+        
         
     }
     
